@@ -23,6 +23,7 @@ Additionally, an auxiliary script, `save_parquet.py`, was executed once to facil
 ## Execution
 Each script is configured internally to read data from the remote HDFS. The scripts are already stored in `hdfs://hdfs-namenode:9000/user/alstylos/scripts`, allowing them to be easily accessed and executed within the Spark cluster.
 
+### Running a Script
 To run a script on the Spark cluster, use the following command:
 ```shell
 spark-submit --master k8s://https://termi7.cslab.ece.ntua.gr:6443 \
@@ -33,6 +34,7 @@ hdfs://hdfs-namenode:9000/user/alstylos/scripts/<script-name>
 ```
 Replace `<script-name>` with the name of one of the scripts described in the previous section.
 
+### Running Query 3 Scripts
 For Query 3 scripts, an additional argument specifying the file format is required. Use the following command:
 ```shell
 spark-submit --master k8s://https://termi7.cslab.ece.ntua.gr:6443 \
