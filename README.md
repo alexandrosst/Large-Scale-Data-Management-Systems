@@ -42,5 +42,5 @@ spark-submit --master k8s://https://termi7.cslab.ece.ntua.gr:6443 \
 hdfs://hdfs-namenode:9000/user/alstylos/scripts/<script-name> <file-format>
 ```
 Replace:
-- `<script-name>` with either `Query_3_df.py` or `Query_3_df.py`.
+- `<script-name>` with either `Query_3_df.py` or `Query_3_rdd.py`.
 - `<file-format>` with either `parquet` or `csv`, depending on the required data format.
