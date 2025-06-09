@@ -20,7 +20,7 @@ The repository primarily consists of Python scripts designed to implement the va
 
 Additionally, an auxiliary script, `save_parquet.py`, was executed once to facilitate data transformation. This script read `.csv` files from `hdfs://hdfs-namenode:9000/user/root/data`, converted them into `.parquet` format and stored the resulting files in `hdfs://hdfs-namenode:9000/user/alstylos/data/parquet`. These `.parquet` files support the execution of upcoming queries within the project.
 
-### Execution
+## Execution
 Each script is configured internally to read data from the remote HDFS. The scripts are already stored in `hdfs://hdfs-namenode:9000/user/alstylos/scripts`, allowing them to be easily accessed and executed within the Spark cluster.
 
 To run a script on the Spark cluster, use the following command:
